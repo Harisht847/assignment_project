@@ -180,3 +180,9 @@ if __name__ == '__main__':
     run()
     t2 = time.time()
     logger.info(f'Regular approach completed in {t2 - t1:.2f} seconds.')
+
+    t1 = time.time()
+    run_parallel(r'C:\Users\DELL\Desktop\app')
+    t2 = time.time()
+    logger.info(f'Cuncurrent approach completed in {t2 - t1:.2f} seconds.')
+
